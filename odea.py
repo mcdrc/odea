@@ -40,7 +40,7 @@ import mimetypes
 
 from bs4 import BeautifulSoup
 from PIL import Image
-import soundfile
+#import soundfile
 import pathlib
 import pkg_resources
 import textwrap
@@ -867,6 +867,7 @@ class File:
         # Install: https://github.com/bastibe/SoundFile
 
         try:
+            import soundfile # not possible without binary soundlib
             a = soundfile.SoundFile(self.filename)
         except:
             logging.error('Could not load sound file')
