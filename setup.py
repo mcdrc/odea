@@ -14,6 +14,7 @@ setup(name='odea',
       license='GPL',
       # packages=['odea'],
       platforms=['POSIX'],
+      py_modules=['odea'],
       entry_points={
         'console_scripts': [
             'odea = cli:main'
